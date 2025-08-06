@@ -131,33 +131,105 @@ sau a apăsat `Ctrl + L`. Ecranul a devenit alb ca o foaie nouă. Tufor zâmbi. 
 
 ## Capitolul Final – Provocările Eroice (Exerciții)
 
-### Misiunea 1 – Detectivul Liniei
-
-1. Rostește `pwd`.
-2. Caută indicii cu `ls` și `ls -la`.
-3. Infiltrează-te pe Desktop cu `cd`.
-
-### Misiunea 2 – Constructorul Nebun
-
-1. Creează fortăreața `proiect_git`.
-2. Înăuntru, invocă fișierele `readme.md` și `main.py`.
-3. Creează camera secretă `src`.
-
-### Misiunea 3 – Distruge și Reconstruiește
-
-1. Extermină `main.py`.
-2. Construiește `backup/arhiva` cu o singură comandă.
-3. Plimbă-te între camere cu `cd` și căi relative.
-
-### Misiunea 4 – Folosește-ți puterile magice
-
-1. Autocompletare cu `Tab` ca un adevărat vrăjitor.
-2. Curăță haosul cu `clear` sau `Ctrl + L`.
+Tufor se afla la finalul uceniciei sale în artele terminalului. Maestrul Bash i-a încredințat cele mai grele misiuni pentru a-i testa curajul, precizia și stăpânirea comenzilor sacre.
 
 ---
 
-## Epilog
+## 🕵️‍♂️ Misiunea 1 – Detectivul Liniei
 
-Tufor, acum Maestrul Git Bash, pleacă în zori spre noi aventuri... poate GitHub? Poate scripting? Cine știe?
+🎯 Scop: Înțelege unde ești și ce te înconjoară.
 
-Tot ce știm e că și tu poți fi ca Tufor. Deschide terminalul. Scrie o comandă. Fii erou.
+1. Rostește comanda magică pentru a afla locul în care te afli:
+
+```bash
+pwd
+```
+
+2. Caută indicii vizibile și ascunse:
+
+```bash
+ls
+ls -la
+```
+
+3. Infiltrează-te în camera de supraveghere cunoscută sub numele de „Desktop”:
+
+```bash
+cd ~/Desktop
+```
+
+---
+
+## 🏗️ Misiunea 2 – Constructorul Nebun
+
+🎯 Scop: Creează un sanctuar de cod.
+
+1. Creează fortăreața unde Tufor va păstra codul:
+
+```bash
+mkdir proiect_git
+cd proiect_git
+```
+
+2. Invocă două pergamente sacre:
+
+```bash
+touch readme.md main.py
+```
+
+3. Creează camera secretă unde magia se va scrie:
+
+```bash
+mkdir src
+```
+
+---
+
+## 🔥 Misiunea 3 – Distruge și Reconstruiește
+
+🎯 Scop: Stăpânește arta creației și distrugerii.
+
+1. Extermină un fișier nefolositor:
+
+```bash
+rm main.py
+```
+
+2. Creează un drum ascuns spre `backup/arhiva` dintr-o singură comandă:
+
+```bash
+mkdir -p backup/arhiva
+```
+
+3. Plimbă-te prin sălile noii tale construcții:
+
+```bash
+cd backup
+cd ../src
+cd ..
+```
+
+---
+
+## 🧙‍♂️ Misiunea 4 – Folosește-ți puterile magice
+
+🎯 Scop: Fii rapid și ordonat ca un ninja digital.
+
+1. Scrie doar începutul unei comenzi sau căi și apasă `Tab` pentru a o completa:
+
+```
+cd pro[TAB]
+```
+
+2. Curăță ecranul haotic:
+
+```bash
+clear
+```
+
+sau apasă `Ctrl + L`
+
+---
+
+🏁 **Finalul:**  
+Tufor a trecut prin toate misiunile și a fost recunoscut drept Maestru al Terminalului. 
