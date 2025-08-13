@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🏹 Exerciții HTML – Partea 3 (Div/Span, Semantic, Formulare)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; line-height: 1.5; margin: 2rem; }
+    h1, h2 { margin-top: 1.5rem; }
+    section { padding: 1rem; border: 1px solid #ddd; border-radius: 12px; margin-bottom: 1.5rem; }
+    .galben { background: #fff3b0; padding: 1rem; border-radius: 10px; }
+    nav a { margin-right: .75rem; text-decoration: none; }
+    table { border-collapse: collapse; }
+    .demo { background:#f7f7f8; padding:.75rem 1rem; border-radius:10px; }
+    footer { margin-top: 1rem; font-size: .9rem; color: #555; }
+    form > * { margin-bottom: .5rem; }
+    .camp { display:block; margin: .25rem 0 .75rem; }
+    .grup { margin: .25rem 0 .75rem; }
+    fieldset { border: 1px solid #ccc; border-radius: 10px; padding: .75rem 1rem; }
+    legend { padding: 0 .5rem; }
+    label { display:inline-block; min-width: 120px; }
+  </style>
+</head>
+<body>
+
+  <h1>🏹 Exerciții pentru studenți – Partea 3</h1>
+
+  <!-- 1. Div și Span -->
+  <section id="ex1">
+    <h2>1) Div și Span</h2>
+    <div class="galben">
+      <h3>Titlu în container</h3>
+      <p>Acesta este un paragraf în care un <span style="color: red; font-weight: 700;">cuvânt</span> a fost evidențiat folosind <code>&lt;span&gt;</code>.</p>
+    </div>
+    <p class="demo"><strong>Observație:</strong> <code>div</code> este element de tip block (ocupa tot rândul), iar <code>span</code> este inline (în interiorul rândului curent).</p>
+  </section>
+
+  <!-- 2. Tag-uri semantice -->
+  <section id="ex2">
+    <h2>2) Tag-uri semantice</h2>
+    <header>
+      <h1>Jurnalul lui Tufor</h1>
+    </header>
+    <nav>
+      <a href="#ex1">Div &amp; Span</a>
+      <a href="#ex2">Semantic</a>
+      <a href="#ex3">Formular</a>
+    </nav>
+    <main>
+      <article>
+        <h3>Articol 1 – Dimineața</h3>
+        <p>Tufor a învățat să structureze paginile folosind elemente semantice precum <code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code> și <code>footer</code>.</p>
+      </article>
+      <article>
+        <h3>Articol 2 – Seara</h3>
+        <p>Cu o structură clară, paginile devin mai accesibile pentru utilizatori și pentru motoarele de căutare.</p>
+      </article>
+    </main>
+    <aside class="demo">
+      <p><strong>Notă:</strong> <em>aside</em> conține informații secundare – aici am pus o notiță utilă.</p>
+    </aside>
+    <footer>
+      <p>&copy; 2025 Numele tău</p>
+    </footer>
+  </section>
+
+  <!-- 3. Formular complet -->
+  <section id="ex3">
+    <h2>3) Formular complet</h2>
+    <form action="#" method="post" novalidate>
+      <div class="camp">
+        <label for="nume">Nume:</label>
+        <input id="nume" name="nume" type="text" placeholder="Ex: Tufor" required />
+      </div>
+
+      <div class="camp">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="exemplu@email.com" required />
+      </div>
+
+      <fieldset class="grup">
+        <legend>Gen</legend>
+        <label><input type="radio" name="gen" value="M" /> Masculin</label>
+        <label><input type="radio" name="gen" value="F" /> Feminin</label>
+      </fieldset>
+
+      <fieldset class="grup">
+        <legend>Hobby-uri</legend>
+        <label><input type="checkbox" name="hobby" value="sport" /> Sport</label>
+        <label><input type="checkbox" name="hobby" value="muzica" /> Muzică</label>
+        <label><input type="checkbox" name="hobby" value="citit" /> Citit</label>
+      </fieldset>
+
+      <div class="camp">
+        <label for="tara">Țara:</label>
+        <select id="tara" name="tara">
+          <option value="">-- alege --</option>
+          <option value="ro">România</option>
+          <option value="it">Italia</option>
+          <option value="es">Spania</option>
+        </select>
+      </div>
+
+      <div class="camp">
+        <label for="mesaj">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" rows="4" cols="40" placeholder="Scrie mesajul tău aici..."></textarea>
+      </div>
+
+      <button type="submit">Trimite</button>
+    </form>
+  </section>
+
+</body>
+</html>
