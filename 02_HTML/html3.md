@@ -118,24 +118,3 @@ Formularele sunt folosite pentru a colecta date de la utilizatori.
 
 ---
 
-## 🏹 Exerciții pentru studenți
-
-1. **Div și Span**
-   - Creează un div cu fundal galben care conține un titlu și un paragraf.
-   - Folosește span pentru a colora un cuvânt din paragraf în roșu.
-
-2. **Tag-uri semantice**
-   - Construiește o pagină cu:
-     - header cu titlu
-     - nav cu 3 link-uri
-     - main cu două articole
-     - footer cu © 2025 Numele tău
-
-3. **Formular complet**
-   - Creează un formular care conține:
-     - Câmp text pentru nume și email
-     - 2 butoane radio pentru gen
-     - 3 checkbox-uri pentru hobby-uri
-     - o listă dropdown cu țări
-     - un câmp textarea pentru mesaj
-     - un buton submit

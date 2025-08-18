@@ -139,30 +139,3 @@ p { color: black; }        /* cel mai slab */
 
 Dar inline (`style="color: green;"`) are prioritate, iar dacă pui și
 `!important`, magia e absolută.
-
----
-
-## 🏹 Exerciții pentru studenți
-
-1. **Aplicare CSS Inline**
-
-   * Creează un paragraf cu textul „Salut, CSS!” și colorează-l folosind `style` inline.
-
-2. **Internal CSS**
-
-   * Creează o pagină HTML cu 3 titluri `<h2>` și aplică-le culori diferite folosind `<style>` intern.
-
-3. **External CSS**
-
-   * Creează un fișier `stil.css` și leagă-l de pagina HTML.
-   * Aplică culori, fonturi și dimensiuni text pentru titluri și paragrafe.
-
-4. **Selectori**
-
-   * Creează o clasă `.highlight` care colorează textul în galben.
-   * Creează un ID `#important` și aplică-i font bold.
-   * Testează selectorul descendent pentru a colora toate `<li>` dintr-un `<ul>`.
-
-5. **Cascading Rules**
-
-   * Creează un paragraf cu stil inline, clasa și ID, apoi vezi ce stil câștigă conform regulilor de cascading.

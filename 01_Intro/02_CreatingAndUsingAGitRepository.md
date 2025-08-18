@@ -136,16 +136,6 @@ git push -u origin main
 
 ---
 
-## 🎉 Gata!
 
-Tufor a reușit! Rocky are acum un jurnal digital, gestionat profesionist cu Git și găzduit în gloria eternă a GitHub-ului. 🪨🚀
 
-Ai învățat să:
-
-- creezi un repository Git,
-- faci commit-uri cu mesaje clare,
-- gestionezi modificările,
-- publici proiectul tău pe GitHub.
-
-Rocky și Tufor îți spun: „Spor la versionat!” 🎩
 

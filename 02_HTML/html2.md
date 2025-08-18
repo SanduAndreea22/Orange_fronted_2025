@@ -180,25 +180,3 @@ Tufor a descoperit cum să aranjeze datele într-un **tabel**.
   </tr>
 </table>
 ```
-
----
-
-## 🏹 Exerciții pentru studenți
-
-1. **Caractere speciale**
-   - Creează o pagină HTML care afișează expresia: `3 < 5 și 5 > 3`.
-   - Adaugă simbolurile © și €.
-
-2. **Liste**
-   - Creează o listă ordonată cu 5 pași pentru a crea o pagină web.
-   - Creează o listă neordonată cu 4 hobby-uri.
-
-3. **Tabele**
-   - Creează un tabel cu 3 coloane (Nume, Materie, Notă) și 4 rânduri.
-   - Încearcă un exemplu cu `colspan` și `rowspan`.
-
----
-
-## 🎯 Concluzie
-
-Acum Tufor poate scrie pagini HTML cu caractere speciale, liste și tabele, ceea ce îl ajută să organizeze informația clar și ușor de citit.
