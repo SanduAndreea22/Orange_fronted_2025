@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exerciții Tufor - Formular și CSS</title>
+    <link rel="stylesheet" href="05_exercise.css">
+</head>
+<body>
+
+    <h1>Aventurile lui Tufor cu Formulare și CSS</h1>
+
+    <!-- Exercițiul 1: Formular simplu -->
+    <h2>Formular simplu</h2>
+    <form>
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <button type="submit">Trimite</button>
+    </form>
+
+    <!-- Exercițiul 2: Iframe -->
+    <h2>Iframe către Google Maps</h2>
+<iframe
+  src="https://www.google.com/maps?q=44.455703,26.080100&hl=ro&z=15&output=embed"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+
+
+
+    <!-- Exercițiul 3: CSS Selectors -->
+    <h2>CSS Selectors</h2>
+    <p>Acest paragraf va fi colorat albastru (selector tip).</p>
+    <p class="highlight">Acest paragraf este evidențiat galben (selector clasă).</p>
+    <a href="#">Acest link devine roșu la hover</a>
+
+    <!-- Exercițiul 4: Cascading Rules -->
+    <h2>Cascading Rules</h2>
+    <p id="important" class="highlight" style="color: green;">
+        Chiar dacă clasa vrea galben și ID-ul este important, roșul inline câștigă!
+    </p>
+
+</body>
+</html>

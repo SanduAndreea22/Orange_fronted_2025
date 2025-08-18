@@ -1,121 +1,144 @@
-# 🎨 Tufor Descoperă CSS – Introducere
+# 🎨 Aventurile lui Tufor -- Introducere în HTML & CSS
 
-După ce Tufor a stăpânit HTML-ul, s-a apucat de partea vizuală: CSS. Pentru că nu poți avea un jurnal digital fără puțină magie colorată! 🧙‍♂️✨
+După ce Tufor a cucerit bazele HTML, a descoperit o lume și mai colorată
+-- **CSS**. Dar înainte de a se arunca în bătăliile stilurilor, el a mai
+întâlnit câteva unelte importante ale lumii web.
 
----
+------------------------------------------------------------------------
 
-## 📘 1. CSS Overview
+## 📝 HTML Forms -- Puterea Interacțiunii
 
-CSS (Cascading Style Sheets) este limbajul care îi spune browserului **cum să arate paginile**.
+Formularele sunt modul în care utilizatorii pot comunica cu paginile
+web. Tufor a aflat că un **formular** colectează date.
 
-* Poate schimba culori, fonturi, spațieri, poziționări și multe altele.
-* CSS lucrează cu HTML: HTML oferă **structura**, CSS oferă **stilul**.
+### Exemplu simplu:
 
-📝 *Gândiți-vă la HTML ca la schelet și CSS ca la hainele pe care le îmbracă Tufor.*
-
----
-
-## 🔗 2. Linking CSS și HTML
-
-Există mai multe moduri de a folosi CSS într-un proiect HTML:
-
-### a) Inline CSS
-
-```html
-<p style="color: red;">Acesta este un paragraf roșu.</p>
+``` html
+<form action="/submit" method="post">
+  <label for="name">Nume:</label>
+  <input type="text" id="name" name="name">
+  <input type="submit" value="Trimite">
+</form>
 ```
 
-* Stilul este aplicat direct pe element.
-* Nu e recomandat pentru pagini mari, devine greu de gestionat.
+📌 **Explicație:** Formularele pot conține câmpuri text, radio,
+checkbox-uri, liste și butoane pentru a trimite date.
 
-### b) Internal CSS
+------------------------------------------------------------------------
 
-```html
-<head>
-  <style>
-    p { color: blue; font-size: 18px; }
-  </style>
-</head>
+## 🪟 HTML IFrames -- Ferestre către alte lumi
+
+Un **iframe** permite includerea unei alte pagini web în pagina curentă.
+
+### Exemplu:
+
+``` html
+<iframe src="https://www.wikipedia.org" width="600" height="400"></iframe>
 ```
 
-* Stilurile sunt în `<style>` în interiorul HTML-ului.
-* Bun pentru pagini mici sau teste rapide.
+📌 **Explicație:** Ca o poartă magică prin care Tufor poate vedea altă
+lume fără să plece din pagina sa.
 
-### c) External CSS
+------------------------------------------------------------------------
 
-```html
-<head>
-  <link rel="stylesheet" href="stil.css">
-</head>
+# 🌈 CSS -- Ce este și de ce e util?
+
+CSS (**Cascading Style Sheets**) este arta decorării paginilor. Dacă
+HTML este scheletul, CSS este veșmântul care face totul mai frumos.
+
+Tufor a înțeles că fără CSS, o pagină este ca o carte alb-negru. Cu CSS,
+devine o poveste plină de culori și stiluri.
+
+------------------------------------------------------------------------
+
+## 🔗 Linking HTML și CSS
+
+Pentru ca magia să funcționeze, trebuie să legăm CSS-ul de HTML.
+
+### 1. Inline CSS
+
+``` html
+<p style="color: red;">Salut de la Tufor!</p>
 ```
 
-* CSS-ul este într-un fișier separat (`stil.css`).
-* Cel mai curat și recomandat pentru proiecte mari.
+### 2. Internal CSS
 
----
+``` html
+<style>
+  p { color: blue; }
+</style>
+```
 
-## 🖊️ 3. CSS Syntax
+### 3. External CSS
 
-CSS are trei componente principale: **selector**, **property**, **value**.
+``` html
+<link rel="stylesheet" href="stil.css">
+```
 
-```css
+📌 **Explicație:** Cel mai bun mod este fișierul extern -- astfel codul
+este curat și reutilizabil.
+
+------------------------------------------------------------------------
+
+## ✍️ CSS Syntax
+
+Tufor a învățat incantația magică a CSS-ului:
+
+``` css
 selector {
-  property: value;
-  property2: value2;
+  proprietate: valoare;
 }
 ```
 
 Exemplu:
 
-```css
+``` css
 h1 {
   color: green;
-  font-family: Arial, sans-serif;
+  font-size: 24px;
 }
 ```
 
-* `h1` = selector (alege elementul HTML)
-* `color` și `font-family` = proprietăți
-* `green` și `Arial, sans-serif` = valori
+------------------------------------------------------------------------
 
----
+## 🎯 CSS Selectors
 
-## 🧩 4. CSS Selectors
+Tufor a descoperit armele pentru a selecta elemente:
 
-Selectorii definesc **ce elemente HTML** vor fi stilizate:
+-   **Type selector** → `p {}` selectează toate paragrafele.
+-   **Class selector** → `.highlight {}` selectează elementele cu clasa
+    respectivă.
+-   **ID selector** → `#important {}` selectează elementul cu acel ID.
+-   **Combinators** → `ul li {}` selectează elemente într-o structură.
+-   **Attribute selector** → `input[type="text"] {}`
+-   **Pseudo-classes** → `a:hover {}` pentru hover pe link.
+-   **Pseudo-elements** → `p::first-line {}` pentru prima linie dintr-un
+    paragraf.
 
-| Selector   | Exemplu                             | Ce selectează                           |
-| ---------- | ----------------------------------- | --------------------------------------- |
-| Element    | `p { color: red; }`                 | Toate paragrafele `<p>`                 |
-| Class      | `.important { font-weight: bold; }` | Toate elementele cu `class="important"` |
-| ID         | `#titlu { font-size: 24px; }`       | Elementul cu `id="titlu"`               |
-| Descendent | `div p { color: blue; }`            | Toate `<p>` din interiorul unui `<div>` |
-| Universal  | `* { margin: 0; }`                  | Toate elementele                        |
+------------------------------------------------------------------------
 
----
+## ⚖️ Cascading Rules
 
-## ⚖️ 5. Cascading Rules
+Aici Tufor a aflat de **ierarhia stilurilor**:
 
-Cascada în CSS înseamnă **prioritatea stilurilor**:
-
-1. Inline > Internal > External
-2. Selectorii mai specifici > mai generali
-3. Ultimul stil scris câștigă (dacă selectorul e la fel de specific)
+1.  **Importanța** (`!important` câștigă mereu)
+2.  **Specificitatea** (ID \> clasă \> element)
+3.  **Ordinea sursei** (ultimul scris câștigă dacă e egalitate)
 
 Exemplu:
 
-```html
-<p id="paragraf" class="important" style="color: red;">Salut!</p>
+``` html
+<p id="text" class="albastru" style="color: green;">Salut!</p>
 ```
 
-CSS:
-
-```css
-p { color: blue; }
-.important { color: green; }
+``` css
+p { color: black; }        /* cel mai slab */
+.albastru { color: blue; } /* mai puternic */
+#text { color: red; }      /* și mai puternic */
 ```
 
-Rezultat: textul va fi **roșu** deoarece stilul inline are prioritate maximă.
+Dar inline (`style="color: green;"`) are prioritate, iar dacă pui și
+`!important`, magia e absolută.
 
 ---
 

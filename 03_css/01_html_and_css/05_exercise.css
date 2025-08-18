@@ -1,0 +1,19 @@
+/* Selector tip */
+p {
+    color: blue;
+}
+
+/* Selector clasă */
+.highlight {
+    background-color: yellow;
+}
+
+/* Selector link hover */
+a:hover {
+    color: red;
+}
+
+/* Selector ID */
+#important {
+    font-weight: bold;
+}
