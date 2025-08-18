@@ -1,0 +1,33 @@
+/* stil.css - Aventurile lui Tufor */
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f8ff;
+    margin: 20px;
+}
+
+.external {
+    color: teal;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 2px 4px;
+}
+
+#important {
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+ul li {
+    margin-bottom: 5px;
+    color: orange;
+}

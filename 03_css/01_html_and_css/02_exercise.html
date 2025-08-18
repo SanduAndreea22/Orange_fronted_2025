@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exerciții CSS - Aventurile lui Tufor</title>
+    <link rel="stylesheet" href="03_exercise.css">
+    <style>
+        /* Internal CSS */
+        h2:nth-of-type(1) { color: green; }
+        h2:nth-of-type(2) { color: blue; }
+        h2:nth-of-type(3) { color: purple; }
+
+        .highlight { color: yellow; }
+        #important { font-weight: bold; }
+        ul li { color: orange; }
+
+        /* External CSS example in stil.css */
+        .external { color: teal; font-family: Arial, sans-serif; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <h1>Aventurile lui Tufor în lumea CSS</h1>
+
+    <!-- Exercițiul 1: CSS Inline -->
+    <p style="color: red;">Tufor spune: „Salut, CSS!” și magia roșie colorează cuvintele.</p>
+
+    <!-- Exercițiul 2: Internal CSS -->
+    <h2>Tufor descoperă verdele pădurii</h2>
+    <h2>Tufor explorează albastrul oceanului</h2>
+    <h2>Tufor admiră movul apusului</h2>
+
+    <!-- Exercițiul 3: External CSS -->
+    <p class="external">Tufor își notează aventurile într-un jurnal stilizat (exemplu cu fișier extern)</p>
+
+    <!-- Exercițiul 4: Selectori -->
+    <p class="highlight">O comoară strălucitoare apare în lumina galbenă.</p>
+    <p id="important">Tufor găsește artefactul important.</p>
+    <ul>
+        <li>Pasul 1: Îmbracă armura</li>
+        <li>Pasul 2: Pregătește sabia</li>
+        <li>Pasul 3: Pleacă în aventură</li>
+    </ul>
+
+    <!-- Exercițiul 5: Cascading Rules -->
+    <p id="paragraf" class="highlight" style="color: red;">
+        Chiar dacă lumina galbenă vrea să fie vizibilă și ID-ul spune că e important, Tufor știe că roșul inline strălucește cel mai tare!
+    </p>
+
+</body>
+</html> 
+
